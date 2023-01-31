@@ -284,8 +284,14 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAMunchFrameworksOverlay \
+    MunchCNSettingsProviderOverlay \
+    MunchCNWifiOverlay \
     MunchCarrierConfigOverlay \
     MunchFrameworksOverlay \
+    MunchGLOBALSettingsProviderOverlay \
+    MunchGLOBALWifiOverlay \
+    MunchINDIASettingsProviderOverlay \
+    MunchINDIAWifiOverlay \
     MunchSettingsOverlay \
     MunchSystemUIOverlay \
     MunchWifiOverlay \

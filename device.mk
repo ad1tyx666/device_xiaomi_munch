@@ -274,6 +274,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.hardware.keystore_desede=true \
     vendor.gatekeeper.disable_spu=true
 
+# KProfiles
+PRODUCT_PACKAGES += \
+    KProfiles
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \

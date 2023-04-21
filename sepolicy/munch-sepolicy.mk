@@ -20,6 +20,10 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xiaomi/munch/sepolicy/vendor/qcom
 
+# Misc. Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    device/xiaomi/munch/sepolicy/vendor/misc/kprofiles
+    
 # Xiaomi Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xiaomi/munch/sepolicy/vendor/xiaomi/audio \

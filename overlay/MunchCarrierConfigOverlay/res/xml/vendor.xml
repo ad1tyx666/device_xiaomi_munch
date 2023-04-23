@@ -145,7 +145,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <boolean name="check_mobile_data_for_cf" value="true" />
     </carrier_config>
 
     <carrier_config mcc="204" mnc="04" iccid="898603,898611,8985231,8985302,8985307">
@@ -603,12 +602,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 
     <carrier_config mcc="260" mnc="03">
         <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="fallback_sms_not_allowed_in_roaming" value="true" />
     </carrier_config>
 
     <carrier_config mcc="260" mnc="05">
         <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="fallback_sms_not_allowed_in_roaming" value="true" />
     </carrier_config>
@@ -1744,6 +1745,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_video_crs_supported_bool" value="true" />
         <boolean name="allow_hold_call_during_emergency_bool" value="false" />
         <boolean name="vonr_enabled_bool" value="true"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
     </carrier_config>
 
     <carrier_config mcc="460" mnc="04">
@@ -1780,6 +1782,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="false" />
         <boolean name="disable_filter_out_conference_host" value="true" />
         <boolean name="carrier_video_crs_supported_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
     </carrier_config>
 
     <carrier_config mcc="460" mnc="06">
@@ -2039,6 +2042,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_video_crs_supported_bool" value="true" />
         <boolean name="allow_hold_call_during_emergency_bool" value="false" />
         <boolean name="vonr_enabled_bool" value="true"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
     </carrier_config>
 
     <carrier_config mcc="460" mnc="12">
@@ -2073,6 +2077,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="false" />
         <boolean name="carrier_video_crs_supported_bool" value="true" />
         <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
     </carrier_config>
 
     <carrier_config mcc="460" mnc="15">
@@ -2212,6 +2217,22 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_b2c_enriched_calling_supported_bool" value="true"/>
     </carrier_config>
 
+    <carrier_config mcc="310" mnc="02">
+        <boolean name="rtt_auto_upgrade_bool" value="true" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="rtt_upgrade_supported_bool" value="true"/>
+        <boolean name="rtt_downgrade_supported_bool" value="true"/>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="allow_emergency_video_calls_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="true" />
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="carrier_call_composer_supported_bool" value="true"/>
+        <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
+        <boolean name="carrier_b2c_enriched_calling_supported_bool" value="true"/>
+    </carrier_config>
+
     <carrier_config mcc="310" mnc="030">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -2223,6 +2244,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="rtt_downgrade_supported_bool" value="true"/>
         <boolean name="rtt_auto_upgrade_bool" value="true" />
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="070">
@@ -2239,6 +2261,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="rtt_auto_upgrade_bool" value="true" />
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="080">
@@ -2249,6 +2272,22 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_enable_mms_with_mobile_data_off" value="true" />
     </carrier_config>
 
+    <carrier_config mcc="310" mnc="88">
+        <boolean name="rtt_auto_upgrade_bool" value="true" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="rtt_upgrade_supported_bool" value="true"/>
+        <boolean name="rtt_downgrade_supported_bool" value="true"/>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="allow_emergency_video_calls_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="true" />
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="carrier_call_composer_supported_bool" value="true"/>
+        <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
+        <boolean name="carrier_b2c_enriched_calling_supported_bool" value="true"/>
+    </carrier_config>
+
     <carrier_config mcc="310" mnc="090">
         <boolean name="rtt_supported_bool" value="true" />
         <boolean name="rtt_upgrade_supported_bool" value="true"/>
@@ -2256,14 +2295,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="rtt_auto_upgrade_bool" value="true" />
         <boolean name="allow_merging_rtt_calls_bool" value="true"/>
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
-    </carrier_config>
-
-    <carrier_config mcc="310" mnc="030">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_vt_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <boolean name="config_enable_display_14digit_imei" value="true" />
-        <boolean name="config_enable_mms_with_mobile_data_off" value="true" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="150">
@@ -2280,6 +2312,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_merging_rtt_calls_bool" value="true"/>
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="170">
@@ -2295,6 +2328,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_merging_rtt_calls_bool" value="true"/>
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="280">
@@ -2310,6 +2344,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_merging_rtt_calls_bool" value="true"/>
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="require_apn_filtering_with_radio_capability_bool" value="true"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="380">
@@ -2325,6 +2360,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_merging_rtt_calls_bool" value="true"/>
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="410">
@@ -2343,6 +2379,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <string name="carrier_name_string"></string>
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
         <boolean name="require_apn_filtering_with_radio_capability_bool" value="true"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="560">
@@ -2358,6 +2395,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_merging_rtt_calls_bool" value="true"/>
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="680">
@@ -2374,6 +2412,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_merging_rtt_calls_bool" value="true"/>
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="950">
@@ -2393,6 +2432,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
             <item value="*82"/>
         </string-array>
         <boolean name="carrier_supports_caller_id_vertical_service_codes_bool" value="true" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="260">
@@ -2553,6 +2593,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="require_apn_filtering_with_radio_capability_bool" value="true"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
     </carrier_config>
 
     <carrier_config mcc="311" mnc="480">
@@ -2610,6 +2651,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     </carrier_config>
 
     <carrier_config device="parrot" mcc="311" mnc="480">
+        <boolean name="show_rtt_visibility_setting_bool" value="true" />
+        <boolean name="ignore_rtt_mode_setting_bool" value="true"/>
+        <int name="default_rtt_mode_int" value="1" />
+    </carrier_config>
+
+    <carrier_config device="bengal_515" mcc="311" mnc="480">
         <boolean name="show_rtt_visibility_setting_bool" value="true" />
         <boolean name="ignore_rtt_mode_setting_bool" value="true"/>
         <int name="default_rtt_mode_int" value="1" />
@@ -2860,6 +2907,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="hide_xcap_apn_bool" value="true"/>
         <boolean name="hide_wfc_mode_option_in_roaming" value="false"/>
         <string-array name="read_only_apn_types_string_array" num="0"/>
+        <boolean name="config_hide_mms_apn" value="false"/>
         <int name="carrier_default_wfc_ims_mode_int" value="1"/>
         <map name="apn_default_values_strings_array">
             <string name="protocol">IPV4V6
@@ -2904,6 +2952,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_wfc_disable_sa" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_vonr_on_by_defalut_bool" value="false"/>
+        <boolean name="config_update_multiparty_state" value="true"/>
+        <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true"/>
     </carrier_config>
     <carrier_config sdk="26">
         <boolean name="vilte_data_is_metered_bool" value="false"/>
@@ -2919,19 +2969,32 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <string-array name="read_only_apn_types_string_array" num="0"/>
         <boolean name="config_use_cnap_presentation" value="true"/>
     </carrier_config>
+    <carrier_config cust_region="VF" mcc="1" mnc="1">
+        <boolean name="config_power_center_5g_save_mode" value="false"/>
+        <string-array name="read_only_apn_types_string_array" num="0"/>
+        <boolean name="voicemail_notification_persistent_bool" value="true"/>
+        <boolean name="carrier_5g_switch_available_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <string name="default_vm_number_string">42020
+        </string>
+        <boolean name="config_support_callbarring_over_ims" value="false"/>
+        <int name="smsToMmsTextThreshold" value="10"/>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="false"/>
+        <boolean name="display_hd_audio_property_bool" value="false"/>
+        <boolean name="config_use_cnap_presentation" value="true"/>
+    </carrier_config>
     <carrier_config mcc="208" mnc="1">
+        <boolean name="config_hide_mms_apn" value="true"/>
         <boolean name="mtk_carrier_wfc_get_location_always" value="true"/>
         <boolean name="config_customize_for_operator_vowifi_feature" value="true"/>
-        <boolean name="hide_wfc_mode_option" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <string name="default_vm_number_string">888
         </string>
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
-        <boolean name="editable_wfc_mode_bool" value="false"/>
-        <boolean name="hide_wfc_mode_option" value="true"/>
         <string-array name="carrier_metered_apn_types_strings" num="3">
             <item value="default"/>
             <item value="dun"/>
@@ -2950,14 +3013,17 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_support_secret_code_for_volte_and_wfc" value="false"/>
         <boolean name="config_cota_carrier_customize_for_mute_ringer_feature" value="true"/>
         <boolean name="config_cota_carrier_customize_for_stk_feature" value="true"/>
+        <boolean name="fallback_sms_not_allowed_in_roaming" value="false"/>
     </carrier_config>
     <carrier_config mcc="208" mnc="1" spn="Rakuten">
         <boolean name="config_support_secret_code_for_volte_and_wfc" value="true"/>
     </carrier_config>
     <carrier_config gid1="4E524A31" mcc="208" mnc="01,26">
+        <boolean name="config_hide_mms_apn" value="false"/>
         <boolean name="config_hide_pref_sms_settings" value="true"/>
     </carrier_config>
     <carrier_config gid1="4E524A31" mcc="206" mnc="1">
+        <boolean name="config_hide_mms_apn" value="false"/>
         <boolean name="config_hide_pref_sms_settings" value="true"/>
     </carrier_config>
     <carrier_config mcc="208" mnc="10" sdk="28">
@@ -2967,20 +3033,27 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_disable_5g_switch_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="222" mnc="88,99">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <int name="config_fast_dormancy_screen_on_minutes_int" value="3"/>
         <boolean name="config_callbarring_over_ims_no_need_password" value="true"/>
         <boolean name="config_volte_play_local_hold_tone" value="true"/>
+        <boolean name="com.google.android.dialer.display_wifi_calling_button_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="228" mnc="1">
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <boolean name="editable_wfc_mode_bool" value="true"/>
+        <boolean name="config_restore_participants_presentation" value="true"/>
     </carrier_config>
     <carrier_config mcc="228" mnc="2">
         <boolean name="carrier_5g_switch_available_bool" value="true"/>
         <boolean name="config_support_change_and_cancel_cb" value="false"/>
+        <boolean name="config_restore_participants_presentation" value="true"/>
     </carrier_config>
     <carrier_config mcc="255" mnc="6">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+    </carrier_config>
+    <carrier_config mcc="238" mnc="1">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="238" mnc="6">
         <string-array name="non_roaming_operator_string_array" num="1">
@@ -2995,9 +3068,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="display_hd_audio_property_bool" value="false"/>
         <int name="wfc_spn_format_idx_int" value="1"/>
-        <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true"/>
+        <boolean name="mtk_disable_conference_management_after_srvcc" value="false"/>
     </carrier_config>
     <carrier_config mcc="286" mnc="3">
+        <boolean name="config_restore_participants_presentation" value="true"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
@@ -3018,6 +3092,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="config_nr_display_rule" value="0"/>
     </carrier_config>
     <carrier_config mcc="268" mnc="6">
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="config_volte_on_by_default_after_ota" value="true"/>
+        <boolean name="config_show_prefer_4g" value="true"/>
         <string name="default_vm_number_string">+351962000000
         </string>
         <boolean name="display_call_type_icon_bool" value="true"/>
@@ -3043,6 +3122,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="is_ims_conference_size_enforced_bool" value="true"/>
         <int name="smsToMmsTextThreshold" value="-1"/>
         <boolean name="config_power_center_5g_save_mode" value="false"/>
+        <int name="config_nr_display_rule" value="4"/>
+        <int name="config_nr_display_timer1" value="10"/>
+        <int name="config_nr_display_timer2" value="10"/>
     </carrier_config>
     <carrier_config mcc="334" mnc="30">
         <boolean name="voicemail_notification_persistent_bool" value="true"/>
@@ -3100,6 +3182,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="334" mnc="130,140">
         <boolean name="carrier_default_data_roaming_enabled_bool" value="true"/>
         <boolean name="carrier_5g_switch_available_bool" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="340" mnc="1">
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="416" mnc="3">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
@@ -3159,6 +3244,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="460" mnc="00,02,04,07,08" nr_support_mode="1">
         <boolean name="config_volte_on_by_default_after_ota" value="true"/>
     </carrier_config>
+    <carrier_config mcc="460" mnc="13,15">
+        <boolean name="config_prefer_2g_bool" value="false"/>
+    </carrier_config>
     <carrier_config mcc="502" mnc="12">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
@@ -3170,6 +3258,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="502" mnc="18">
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+        <boolean name="config_restore_participants_presentation" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="502" mnc="19">
+        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+        <boolean name="config_disable_caller_id" value="true"/>
     </carrier_config>
     <carrier_config mcc="502" mnc="152">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -3192,6 +3285,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_editable_wfc_when_calling" value="false"/>
         <boolean name="config_video_supp_service" value="true"/>
     </carrier_config>
+    <carrier_config mcc="404" mnc="34,38,51,53,54,55,57,58,59,62,64,66,71,72,73,74,75,76,77,79,80,81">
+        <boolean name="carrier_disable_5g_switch_bool" value="true"/>
+    </carrier_config>
     <carrier_config mcc="405">
         <boolean name="config_update_multiparty_state" value="false"/>
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -3207,6 +3303,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="editable_wfc_mode_bool" value="false"/>
         <boolean name="hide_wfc_mode_option" value="true"/>
         <boolean name="wos_flight_mode_support_bool" value="true"/>
+        <boolean name="carrier_disable_5g_switch_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="405" mnc="66,67,750,751,752,753,754,755,756">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
@@ -3214,6 +3311,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="editable_wfc_mode_bool" value="false"/>
         <boolean name="hide_wfc_mode_option" value="true"/>
         <boolean name="wos_flight_mode_support_bool" value="true"/>
+        <boolean name="carrier_disable_5g_switch_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="404" mnc="22,24,07,78,04,12,56,19,89,87,82,44,14">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
@@ -3221,6 +3319,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="editable_wfc_mode_bool" value="false"/>
         <boolean name="hide_wfc_mode_option" value="true"/>
         <boolean name="wos_flight_mode_support_bool" value="true"/>
+        <boolean name="carrier_disable_5g_switch_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="405" mnc="799,70,845,846,848,849,850,852,853">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
@@ -3228,6 +3327,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="editable_wfc_mode_bool" value="false"/>
         <boolean name="hide_wfc_mode_option" value="true"/>
         <boolean name="wos_flight_mode_support_bool" value="true"/>
+        <boolean name="carrier_disable_5g_switch_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="405" mnc="840,854,855,856,857,858,859,860,861,862,863,864,865,866,867,868,869,870,871,872,873,874">
         <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
@@ -3240,6 +3340,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="show_merge_button_on_conference_participant" value="true"/>
         <boolean name="mtk_carrier_wfc_get_location_always" value="true"/>
         <int name="ims_conference_size_limit_int" value="9"/>
+        <boolean name="carrier_disable_5g_switch_bool" value="true"/>
+        <boolean name="carrier_config_only_show_plmn" value="true"/>
     </carrier_config>
     <carrier_config mcc="455" mnc="02,07">
         <string-array name="apn_hide_rule_strings_array" num="2">
@@ -3251,17 +3353,17 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="404" mnc="02,03,10,16,31,40,45,49,70,90,92,93,94,95,96,97,98">
-        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="editable_wfc_mode_bool" value="false"/>
         <boolean name="hide_wfc_mode_option" value="true"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+        <boolean name="carrier_disable_5g_switch_bool" value="true"/>
         <boolean name="mtk_carrier_wfc_get_location_always" value="true"/>
     </carrier_config>
     <carrier_config mcc="405" mnc="51,52,53,54,55,56">
-        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="editable_wfc_mode_bool" value="false"/>
         <boolean name="hide_wfc_mode_option" value="true"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+        <boolean name="carrier_disable_5g_switch_bool" value="true"/>
         <boolean name="mtk_carrier_wfc_get_location_always" value="true"/>
     </carrier_config>
     <carrier_config mcc="419" mnc="2">
@@ -3297,12 +3399,13 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     </carrier_config>
     <carrier_config mcc="525" mnc="5" sdk="28">
         <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true"/>
-        <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true"/>
     </carrier_config>
     <carrier_config mcc="530" mnc="5">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <boolean name="carrier_stk_icon_hidden_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="530" mnc="24">
+        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <string name="default_vm_number_string">+64222022002
         </string>
     </carrier_config>
@@ -3311,15 +3414,24 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="editable_wfc_mode_bool" value="false"/>
         <boolean name="carrier_5g_switch_available_bool" value="true"/>
         <boolean name="display_hd_audio_property_bool" value="false"/>
-        <boolean name="editable_wfc_mode_bool" value="false"/>
         <boolean name="hide_wfc_mode_option" value="true"/>
         <boolean name="config_prefer_2g_bool" value="false"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <int name="maxMessageSize" value="3145728"/>
     </carrier_config>
-    <carrier_config cust_region="hk_h3g" mcc="234" mnc="20">
+    <carrier_config mcc="235" mnc="94">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+        <boolean name="editable_wfc_mode_bool" value="false"/>
+        <boolean name="carrier_5g_switch_available_bool" value="true"/>
+        <boolean name="display_hd_audio_property_bool" value="false"/>
+        <boolean name="hide_wfc_mode_option" value="true"/>
+        <boolean name="config_prefer_2g_bool" value="false"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <int name="maxMessageSize" value="3145728"/>
     </carrier_config>
     <carrier_config mcc="234" mnc="30">
         <boolean name="display_hd_audio_property_bool" value="false"/>
@@ -3338,13 +3450,20 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="wfc_spn_format_idx_int" value="1"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
     </carrier_config>
+    <carrier_config mcc="235" mnc="94">
+        <boolean name="editable_wfc_mode_bool" value="false"/>
+        <boolean name="hide_wfc_mode_option" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+    </carrier_config>
     <carrier_config mcc="232" mnc="01,02,11,12">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
         <boolean name="carrier_allow_transfer_gsm_call_bool" value="true"/>
-        <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true"/>
     </carrier_config>
     <carrier_config mcc="232" mnc="05,10,14">
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <boolean name="display_call_type_icon_bool" value="true"/>
         <boolean name="config_prefer_2g_bool" value="false"/>
@@ -3352,12 +3471,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <string-array name="non_roaming_operator_string_array" num="1">
             <item value="23203"/>
         </string-array>
-        <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true"/>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
         <boolean name="carrier_allow_transfer_gsm_call_bool" value="true"/>
         <boolean name="config_restore_participants_presentation" value="true"/>
     </carrier_config>
     <carrier_config mcc="240" mnc="2">
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="config_prefer_2g_bool" value="false"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="2"/>
         <boolean name="editable_wfc_mode_bool" value="false"/>
@@ -3370,8 +3491,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="maxMessageSize" value="2097152"/>
     </carrier_config>
     <carrier_config mcc="238" mnc="6">
-        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="2"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="234" mnc="15">
         <boolean name="config_power_center_5g_save_mode" value="false"/>
@@ -3396,13 +3517,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
         <boolean name="hide_wfc_mode_option" value="true"/>
         <int name="smsToMmsTextThreshold" value="10"/>
+        <boolean name="mtk_disable_conference_management_after_srvcc" value="false"/>
     </carrier_config>
     <carrier_config mcc="230" mnc="2">
         <boolean name="wos_flight_mode_support_bool" value="false"/>
         <string name="default_vm_number_string">*99
         </string>
+        <boolean name="config_smsc_no_need_show_international_number" value="true"/>
     </carrier_config>
     <carrier_config mcc="231" mnc="3">
+        <boolean name="config_hide_mms_apn" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
     </carrier_config>
@@ -3434,6 +3558,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
             <item value="dun"/>
             <item value="supl"/>
         </string-array>
+        <boolean name="mtk_disable_conference_management_after_srvcc" value="false"/>
     </carrier_config>
     <carrier_config mcc="214" mnc="1">
         <boolean name="config_power_center_5g_save_mode" value="false"/>
@@ -3442,6 +3567,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <string name="default_vm_number_string">22177
         </string>
         <int name="smsToMmsTextThreshold" value="5"/>
@@ -3466,7 +3592,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
         <boolean name="carrier_allow_transfer_gsm_call_bool" value="true"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
+        <boolean name="mtk_disable_conference_management_after_srvcc" value="false"/>
         <boolean name="config_restore_participants_presentation" value="true"/>
+        <boolean name="config_callbarring_over_ims_no_need_password" value="true"/>
+        <boolean name="config_support_change_and_cancel_cb" value="false"/>
+        <int name="wfc_spn_format_idx_int" value="1"/>
     </carrier_config>
     <carrier_config mcc="214" mnc="4">
         <string name="default_vm_number_string">121
@@ -3511,11 +3641,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
         <boolean name="carrier_allow_transfer_gsm_call_bool" value="true"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
+        <boolean name="mtk_disable_conference_management_after_srvcc" value="false"/>
     </carrier_config>
     <carrier_config mcc="262" mnc="03,07,11">
         <boolean name="config_power_center_5g_save_mode" value="false"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <string name="default_vm_number_string">+491793000333
+        </string>
+        <string name="display_lte_icon_type_string">volte
         </string>
         <int name="maxMessageSize" value="614400"/>
         <boolean name="smsUsesSimpleCharactersOnly" value="true"/>
@@ -3523,6 +3656,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
         <boolean name="display_hd_audio_property_bool" value="true"/>
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true"/>
+        <string-array name="ratchet_rat_families" num="4">
+            <item value="1,2"/>
+            <item value="7,8,12"/>
+            <item value="3,11,9,10,15"/>
+            <item value="14,19"/>
+        </string-array>
+        <string-array name="ims_reasoninfo_mapping_string_array" num="2">
+            <item value="1014|decline|510"/>
+            <item value="1014|call rejected by user|510"/>
+        </string-array>
     </carrier_config>
     <carrier_config mcc="262" mnc="2">
         <boolean name="config_power_center_5g_save_mode" value="false"/>
@@ -3557,8 +3700,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
         <boolean name="carrier_allow_transfer_gsm_call_bool" value="true"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
+        <boolean name="mtk_disable_conference_management_after_srvcc" value="false"/>
     </carrier_config>
     <carrier_config mcc="222" mnc="1">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
@@ -3595,8 +3740,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
         <boolean name="carrier_allow_transfer_gsm_call_bool" value="true"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
+        <boolean name="mtk_disable_conference_management_after_srvcc" value="false"/>
     </carrier_config>
     <carrier_config mcc="222" mnc="43">
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="222" mnc="07,49">
+        <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
@@ -3620,6 +3772,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_restore_participants_presentation" value="true"/>
         <boolean name="carrier_fiveg_power_saving_available_bool" value="false"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
+        <boolean name="mtk_disable_conference_management_after_srvcc" value="false"/>
     </carrier_config>
     <carrier_config mcc="268" mnc="1">
         <boolean name="config_power_center_5g_save_mode" value="false"/>
@@ -3665,14 +3818,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
         <boolean name="carrier_allow_transfer_gsm_call_bool" value="true"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
+        <boolean name="mtk_disable_conference_management_after_srvcc" value="false"/>
     </carrier_config>
     <carrier_config mcc="272" mnc="1">
+        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="config_power_center_5g_save_mode" value="false"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_wfc_mode_option" value="true"/>
-        <boolean name="editable_wfc_mode_bool" value="false"/>
         <string name="default_vm_number_string">171
         </string>
         <int name="smsToMmsTextThreshold" value="5"/>
@@ -3683,15 +3836,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_support_call_forward_time_dialog" value="true"/>
         <boolean name="carrier_fiveg_power_saving_available_bool" value="false"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
-        <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true"/>
+        <boolean name="mtk_disable_conference_management_after_srvcc" value="false"/>
+        <boolean name="carrier_allow_transfer_gsm_call_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="202" mnc="5">
         <boolean name="config_power_center_5g_save_mode" value="false"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="editable_wfc_mode_bool" value="false"/>
-        <boolean name="hide_wfc_mode_option" value="true"/>
         <string name="default_vm_number_string">121
         </string>
         <boolean name="voicemail_notification_persistent_bool" value="true"/>
@@ -3705,6 +3857,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
         <boolean name="carrier_allow_transfer_gsm_call_bool" value="true"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
+        <boolean name="mtk_disable_conference_management_after_srvcc" value="false"/>
     </carrier_config>
     <carrier_config mcc="204" mnc="4">
         <boolean name="config_power_center_5g_save_mode" value="false"/>
@@ -3719,7 +3872,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
         <boolean name="enableMultipartSMS" value="true"/>
         <boolean name="display_hd_audio_property_bool" value="false"/>
-        <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true"/>
         <boolean name="config_editable_wfc_when_calling" value="false"/>
         <int name="wfc_spn_format_idx_int" value="1"/>
         <int name="config_nr_display_rule" value="0"/>
@@ -3729,6 +3881,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="editable_wfc_mode_bool" value="true"/>
         <boolean name="carrier_fiveg_power_saving_available_bool" value="false"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
+        <boolean name="mtk_disable_conference_management_after_srvcc" value="false"/>
+        <boolean name="carrier_stk_is_custoperator" value="true"/>
     </carrier_config>
     <carrier_config mcc="204" mnc="8">
         <boolean name="config_power_center_5g_save_mode" value="false"/>
@@ -3748,6 +3902,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_power_center_5g_save_mode" value="false"/>
     </carrier_config>
     <carrier_config mcc="208" mnc="10">
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="config_volte_on_by_default_after_ota" value="true"/>
+        <boolean name="display_hd_plus_icon_bool" value="true"/>
         <boolean name="config_power_center_5g_save_mode" value="false"/>
         <string name="default_vm_number_string">123
         </string>
@@ -3779,6 +3938,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <string-array name="read_only_apn_types_string_array" num="0"/>
     </carrier_config>
     <carrier_config mcc="208" mnc="20">
+        <boolean name="config_prefer_2g_bool" value="false"/>
+        <boolean name="config_show_prefer_3g" value="false"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <string-array name="read_only_apn_types_string_array" num="0"/>
         <int name="maxMessageSize" value="614400"/>
@@ -3792,6 +3953,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="config_nr_display_timer1" value="0"/>
         <int name="config_nr_display_timer2" value="0"/>
         <boolean name="config_show_prefer_4g" value="true"/>
+        <boolean name="config_hide_mms_apn" value="true"/>
     </carrier_config>
     <carrier_config mcc="208" mnc="26">
         <boolean name="display_call_type_icon_bool" value="true"/>
@@ -3809,7 +3971,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
             <item value="900018018"/>
             <item value="16"/>
             <item value="900202010"/>
-            <item value="600515253"/>
+            <item value="600505152"/>
             <item value="116000"/>
             <item value="116111"/>
         </string-array>
@@ -3851,6 +4013,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
             <item value="dun"/>
             <item value="supl"/>
         </string-array>
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2"/>
+            <item value="7,8,12"/>
+            <item value="3,11,9,10,15"/>
+        </string-array>
         <boolean name="config_callbarring_over_ims_no_need_password" value="true"/>
         <boolean name="config_disable_ss_over_wfc_when_airplane_enabled" value="true"/>
         <boolean name="config_mms_allowed_on_roaming" value="true"/>
@@ -3869,7 +4036,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
             <item value="2147483647"/>
             <item value="Inf. 11822"/>
             <item value="11822"/>
-            <item value="Activar Buzón Movista"/>
+            <item value="Activar Buzón Movistar"/>
             <item value="22500"/>
             <item value="Emergencias"/>
             <item value="112"/>
@@ -3880,7 +4047,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         </string-array>
     </carrier_config>
     <carrier_config mcc="214" mnc="3">
-        <boolean name="wifi_calls_can_be_hd_audio" value="false"/>
         <string name="default_vm_number_string">242
         </string>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
@@ -3905,6 +4071,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_cota_carrier_customize_for_mute_ringer_feature" value="true"/>
         <boolean name="config_cota_carrier_customize_for_stk_feature" value="true"/>
         <boolean name="config_show_wifi_call_subscription_displayname" value="false"/>
+        <boolean name="config_smsc_no_need_show_international_number" value="true"/>
+        <boolean name="carrier_stk_is_custoperator" value="true"/>
+        <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
+        <boolean name="carrier_allow_transfer_gsm_call_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="214" mnc="3" spn="simyo">
         <boolean name="carrier_5g_switch_available_bool" value="false"/>
@@ -3968,6 +4138,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="ims_conference_size_limit_int" value="6"/>
         <boolean name="display_call_type_icon_bool" value="true"/>
         <boolean name="carrier_stk_dialog_not_disappear" value="true"/>
+        <boolean name="config_disable_caller_id" value="true"/>
     </carrier_config>
     <carrier_config mcc="730" mnc="2">
         <boolean name="config_show_prefer_4g" value="true"/>
@@ -3979,6 +4150,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <string name="display_wifi_icon_type_string">vozwifi
         </string>
         <boolean name="call_barring_visibility_bool" value="false"/>
+        <boolean name="config_disable_caller_id" value="true"/>
         <string-array name="non_roaming_operator_string_array" num="4">
             <item value="73001"/>
             <item value="73003"/>
@@ -4029,6 +4201,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         </string>
         <boolean name="call_barring_visibility_bool" value="false"/>
         <boolean name="carrier_stk_icon_hidden_bool" value="true"/>
+        <boolean name="carrier_stk_is_custoperator" value="true"/>
+        <boolean name="config_disable_caller_id" value="true"/>
     </carrier_config>
     <carrier_config mcc="716" mnc="17">
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
@@ -4039,6 +4213,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <string name="display_wifi_icon_type_string">vozwifi
         </string>
         <boolean name="carrier_wfc_supports_wifi_only_bool" value="false"/>
+        <boolean name="smsUsesSimpleCharactersOnly" value="true"/>
     </carrier_config>
     <carrier_config mcc="732" mnc="101">
         <boolean name="config_power_center_5g_save_mode" value="false"/>
@@ -4065,6 +4240,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <boolean name="display_call_type_icon_bool" value="true"/>
         <boolean name="carrier_default_data_roaming_enabled_bool" value="true"/>
+        <boolean name="config_disable_caller_id" value="true"/>
         <string-array name="config_only_show_spn_on_roaming" num="4">
             <item value="73002"/>
             <item value="73003"/>
@@ -4088,11 +4264,18 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         </string>
         <string name="display_wifi_icon_type_string">vozwifi
         </string>
+        <boolean name="config_disable_caller_id" value="true"/>
     </carrier_config>
     <carrier_config mcc="222" mnc="50">
         <string-array name="read_only_apn_types_string_array" num="0"/>
     </carrier_config>
+    <carrier_config mcc="222" mnc="54">
+        <string-array name="non_roaming_operator_string_array" num="1">
+            <item value="22210"/>
+        </string-array>
+    </carrier_config>
     <carrier_config mcc="647" mnc="0">
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
     </carrier_config>
     <carrier_config mcc="647" mnc="3">
@@ -4104,6 +4287,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="272" mnc="2">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
         <string name="default_vm_number_string">171
         </string>
         <string-array name="non_roaming_operator_string_array" num="1">
@@ -4112,8 +4296,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     </carrier_config>
     <carrier_config mcc="272" mnc="3">
         <boolean name="carrier_stk_icon_hidden_bool" value="true"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="272" mnc="5">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
         <string name="default_vm_number_string">171
         </string>
         <string-array name="non_roaming_operator_string_array" num="1">
@@ -4132,6 +4319,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="466" mnc="5">
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <boolean name="config_call_forwarding_CFNRc_visibility_bool" value="false"/>
+        <boolean name="call_forwarding_when_unreachable_supported_bool" value="false"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <int name="wfc_spn_format_idx_int" value="1"/>
         <string-array name="non_roaming_operator_string_array" num="1">
@@ -4148,6 +4336,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     </carrier_config>
     <carrier_config mcc="466" mnc="12">
         <boolean name="config_call_forwarding_CFNRc_visibility_bool" value="false"/>
+        <boolean name="call_forwarding_when_unreachable_supported_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="466" mnc="92">
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
@@ -4173,16 +4362,30 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <boolean name="editable_wfc_roaming_mode_bool" value="true"/>
         <boolean name="config_restore_participants_presentation" value="true"/>
+        <boolean name="config_smsc_no_need_show_international_number" value="true"/>
     </carrier_config>
     <carrier_config mcc="222" mnc="10">
         <boolean name="config_support_callbarring_over_ims" value="false"/>
     </carrier_config>
     <carrier_config mcc="234" mnc="10">
+        <boolean name="config_prefer_2g_bool" value="false"/>
         <boolean name="config_power_center_5g_save_mode" value="false"/>
         <boolean name="carrier_5g_switch_available_bool" value="true"/>
         <boolean name="config_show_prefer_4g" value="true"/>
         <boolean name="config_wifi_disconnect_delay_for_vowifi_detach" value="true"/>
         <boolean name="config_disable_ss_over_wfc_when_airplane_enabled" value="true"/>
+    </carrier_config>
+    <carrier_config gid1="0A" mcc="234" mnc="10">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+    </carrier_config>
+    <carrier_config gid1="0AFFFF" mcc="234" mnc="10">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+    </carrier_config>
+    <carrier_config gid1="0AFFFFFFFFFF544553434F202020202020202020" mcc="234" mnc="10">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="510" mnc="10">
+        <boolean name="config_disable_caller_id" value="true"/>
     </carrier_config>
     <carrier_config mcc="510" mnc="28">
         <boolean name="support_video_conference_call_bool" value="true"/>
@@ -4218,12 +4421,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_callbarring_over_ims_no_need_password" value="true"/>
     </carrier_config>
     <carrier_config mcc="520" mnc="3">
+        <boolean name="config_prefer_2g_bool" value="false"/>
         <boolean name="config_support_secret_code_for_volte_and_wfc" value="false"/>
         <boolean name="display_call_type_icon_bool" value="true"/>
         <string name="display_lte_icon_type_string">volte
         </string>
-        <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true"/>
         <boolean name="config_video_supp_service" value="true"/>
+        <boolean name="config_wfc_disable_sa" value="true"/>
+        <boolean name="config_dismiss_countryiso_after_conference" value="true"/>
     </carrier_config>
     <carrier_config mcc="520" mnc="17">
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
@@ -4234,9 +4439,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     </carrier_config>
     <carrier_config mcc="525" mnc="1">
         <boolean name="config_callbarring_base_on_volte" value="true"/>
-        <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="config_editable_wfc_when_calling" value="false"/>
+        <boolean name="config_wfc_disable_sa" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="525" mnc="3">
+        <boolean name="config_wfc_disable_sa" value="true"/>
     </carrier_config>
     <carrier_config mcc="525" mnc="10">
         <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
@@ -4264,6 +4472,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         </string>
         <string name="display_wifi_icon_type_string">vozwifi
         </string>
+        <boolean name="smsUsesSimpleCharactersOnly" value="true"/>
         <string-array name="unloggable_numbers_string_array" num="1">
             <item value="100"/>
         </string-array>
@@ -4292,12 +4501,17 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="maxMessageSize" value="512000"/>
     </carrier_config>
     <carrier_config mcc="250" mnc="99">
-        <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true"/>
         <boolean name="config_wifi_disconnect_delay_for_vowifi_detach" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
     </carrier_config>
     <carrier_config mcc="250" mnc="50">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+    </carrier_config>
+    <carrier_config mcc="250" mnc="20">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="250" mnc="20">
+        <boolean name="mtk_carrier_wfc_get_location_always" value="true"/>
     </carrier_config>
     <carrier_config mcc="257" mnc="1">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
@@ -4323,9 +4537,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="hide_wfc_mode_option" value="true"/>
         <boolean name="carrier_stk_dialog_not_disappear" value="true"/>
     </carrier_config>
+    <carrier_config mcc="722" mnc="07,010">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+        <boolean name="config_prefer_2g_bool" value="false"/>
+        <string-array name="unloggable_numbers_string_array" num="1">
+            <item value="144"/>
+        </string-array>
+    </carrier_config>
     <carrier_config mcc="722" mnc="34">
         <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
-        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="722" mnc="310">
         <string name="default_vm_number_string">*2747
@@ -4367,6 +4587,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_stk_dialog_not_disappear" value="true"/>
     </carrier_config>
     <carrier_config mcc="370" mnc="2">
+        <boolean name="config_smsc_no_need_show_international_number" value="true"/>
         <boolean name="config_power_center_5g_save_mode" value="false"/>
         <boolean name="carrier_fiveg_power_saving_available_bool" value="false"/>
         <string name="default_vm_number_string">*99
@@ -4385,6 +4606,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="370" mnc="1">
         <string name="default_vm_number_string">*777
         </string>
+        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
     </carrier_config>
     <carrier_config mcc="748" mnc="7">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
@@ -4421,9 +4643,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
             <item value="180"/>
         </string-array>
     </carrier_config>
-    <carrier_config mcc="724" mnc="02,03,04,30,31">
+    <carrier_config mcc="724" mnc="02,03,04,30,31,54">
         <string name="default_vm_number_string">*100
         </string>
+        <boolean name="hide_ims_apn_bool" value="false"/>
+        <boolean name="hide_xcap_apn_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="724" mnc="5">
         <string name="default_vm_number_string">*100
@@ -4435,6 +4659,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="display_call_type_icon_bool" value="true"/>
         <boolean name="smsUsesSimpleCharactersOnly" value="true"/>
         <boolean name="hide_wfc_mode_option" value="true"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="724" mnc="10">
         <string name="default_vm_number_string">*555
@@ -4442,11 +4667,13 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="editable_wfc_mode_bool" value="false"/>
         <boolean name="hide_ims_apn_bool" value="false"/>
+        <boolean name="hide_xcap_apn_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="724" mnc="06,11,23">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="editable_wfc_mode_bool" value="false"/>
         <boolean name="hide_ims_apn_bool" value="false"/>
+        <boolean name="hide_xcap_apn_bool" value="false"/>
         <string-array name="carrier_metered_apn_types_strings" num="3">
             <item value="default"/>
             <item value="dun"/>
@@ -4473,10 +4700,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="hide_wfc_mode_option" value="true"/>
     </carrier_config>
     <carrier_config mcc="704" mnc="2">
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="editable_voicemail_number_setting_bool" value="false"/>
         <boolean name="hide_wfc_mode_option" value="true"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+        <string name="default_vm_number_string">*77
+        </string>
     </carrier_config>
     <carrier_config mcc="740" mnc="0">
         <boolean name="carrier_default_data_roaming_enabled_bool" value="true"/>
@@ -4537,6 +4765,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="hide_wfc_mode_option" value="true"/>
         <boolean name="carrier_stk_dialog_not_disappear" value="true"/>
     </carrier_config>
+    <carrier_config mcc="710" mnc="300">
+        <string name="default_vm_number_string">*86
+        </string>
+    </carrier_config>
     <carrier_config mcc="710" mnc="73">
         <boolean name="display_hd_audio_property_bool" value="false"/>
         <boolean name="display_call_type_icon_bool" value="true"/>
@@ -4568,6 +4800,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <string-array name="read_only_apn_types_string_array" num="1">
             <item value="ims"/>
         </string-array>
+        <boolean name="config_volte_on_by_default_after_ota" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="454" mnc="7">
+        <boolean name="config_restore_participants_presentation" value="true"/>
     </carrier_config>
     <carrier_config mcc="454" mnc="12,13">
         <boolean name="config_support_callbarring_over_ims" value="false"/>
@@ -4575,6 +4811,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     </carrier_config>
     <carrier_config mcc="454" mnc="30">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+        <boolean name="config_restore_participants_presentation" value="true"/>
     </carrier_config>
     <carrier_config mcc="732" mnc="103,111,165">
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
@@ -4635,6 +4872,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="support_direct_fdn_dialing_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="232" mnc="03,07">
+        <boolean name="config_hide_mms_apn" value="true"/>
         <boolean name="config_power_center_5g_save_mode" value="false"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
@@ -4665,6 +4903,25 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_show_plmn_limited_service" value="true"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
+        <int name="config_nr_display_rule" value="4"/>
+        <int name="config_nr_display_timer1" value="10"/>
+        <int name="config_nr_display_timer2" value="10"/>
+    </carrier_config>
+    <carrier_config gid1="70" mcc="232" mnc="7">
+        <string name="default_vm_number_string">+436776000
+        </string>
+    </carrier_config>
+    <carrier_config gid1="72" mcc="232" mnc="7">
+        <string name="default_vm_number_string">+436776000
+        </string>
+    </carrier_config>
+    <carrier_config gid1="74" mcc="232" mnc="7">
+        <string name="default_vm_number_string">+436776000
+        </string>
+    </carrier_config>
+    <carrier_config gid1="75" mcc="232" mnc="7">
+        <string name="default_vm_number_string">+436776000
+        </string>
     </carrier_config>
     <carrier_config mcc="230" mnc="1">
         <boolean name="config_power_center_5g_save_mode" value="false"/>
@@ -4697,12 +4954,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
         <boolean name="hide_wfc_mode_option_in_roaming" value="true"/>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
+        <int name="config_nr_display_rule" value="4"/>
+        <int name="config_nr_display_timer1" value="10"/>
+        <int name="config_nr_display_timer2" value="10"/>
     </carrier_config>
     <carrier_config mcc="231" mnc="6">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="wos_flight_mode_support_bool" value="true"/>
     </carrier_config>
-    <carrier_config mcc="262" mnc="01,06">
+    <carrier_config mcc="262" mnc="01,06,98">
+        <boolean name="config_hide_mms_apn" value="true"/>
         <boolean name="config_power_center_5g_save_mode" value="false"/>
         <boolean name="hide_wfc_mode_option" value="true"/>
         <boolean name="editable_wfc_mode_bool" value="false"/>
@@ -4746,9 +5007,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
         <boolean name="carrier_show_plmn_for_vowifi" value="false"/>
+        <int name="config_nr_display_rule" value="4"/>
+        <int name="config_nr_display_timer1" value="10"/>
+        <int name="config_nr_display_timer2" value="10"/>
     </carrier_config>
     <carrier_config mcc="262" mnc="98">
+        <boolean name="config_hide_mms_apn" value="true"/>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+        <boolean name="hide_wfc_mode_option" value="true"/>
+        <boolean name="editable_wfc_mode_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="202" mnc="1">
         <boolean name="config_power_center_5g_save_mode" value="false"/>
@@ -4781,9 +5049,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
         <boolean name="hide_wfc_mode_option_in_roaming" value="true"/>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
+        <int name="config_nr_display_rule" value="4"/>
+        <int name="config_nr_display_timer1" value="10"/>
+        <int name="config_nr_display_timer2" value="10"/>
     </carrier_config>
     <carrier_config mcc="216" mnc="1">
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="216" mnc="3">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
@@ -4825,6 +5098,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
         <boolean name="hide_wfc_mode_option_in_roaming" value="true"/>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
+        <int name="config_nr_display_rule" value="4"/>
+        <int name="config_nr_display_timer1" value="10"/>
+        <int name="config_nr_display_timer2" value="10"/>
     </carrier_config>
     <carrier_config mcc="260">
         <int name="smsToMmsTextThreshold" value="6"/>
@@ -4871,6 +5147,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_show_spn_for_vowifi" value="false"/>
     </carrier_config>
     <carrier_config mcc="260" mnc="2">
+        <boolean name="config_hide_mms_apn" value="true"/>
         <boolean name="config_power_center_5g_save_mode" value="false"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
@@ -4893,10 +5170,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_show_plmn_limited_service" value="true"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
+        <int name="config_nr_display_rule" value="4"/>
+        <int name="config_nr_display_timer1" value="10"/>
+        <int name="config_nr_display_timer2" value="10"/>
     </carrier_config>
     <carrier_config mcc="260" mnc="6">
         <boolean name="config_power_center_5g_save_mode" value="false"/>
-        <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="editable_wfc_roaming_mode_bool" value="true"/>
         <int name="wfc_spn_format_idx_int" value="1"/>
@@ -4904,9 +5183,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_restore_participants_presentation" value="true"/>
         <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true"/>
         <boolean name="config_wifi_signal_weak_disconnect_vowifi_call" value="true"/>
-        <string-array name="config_non_roaming_notification_for_domestic_roaming" num="1">
-            <item value="260"/>
-        </string-array>
         <boolean name="display_hd_plus_icon_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="260" mnc="12">
@@ -4914,6 +5190,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_5g_icon_optimization" value="true"/>
     </carrier_config>
     <carrier_config mcc="231" mnc="2">
+        <boolean name="config_hide_mms_apn" value="true"/>
         <boolean name="config_power_center_5g_save_mode" value="false"/>
         <string name="default_vm_number_string">+421903333999
         </string>
@@ -4940,6 +5217,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_show_plmn_limited_service" value="true"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
+        <int name="config_nr_display_rule" value="4"/>
+        <int name="config_nr_display_timer1" value="10"/>
+        <int name="config_nr_display_timer2" value="10"/>
     </carrier_config>
     <carrier_config mcc="231" mnc="1">
         <boolean name="editable_wfc_roaming_mode_bool" value="true"/>
@@ -4968,6 +5248,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
     </carrier_config>
     <carrier_config mcc="219" mnc="01,20">
+        <boolean name="config_hide_mms_apn" value="true"/>
         <boolean name="config_power_center_5g_save_mode" value="false"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
@@ -4998,6 +5279,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_show_plmn_limited_service" value="true"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
+        <int name="config_nr_display_rule" value="4"/>
+        <int name="config_nr_display_timer1" value="10"/>
+        <int name="config_nr_display_timer2" value="10"/>
     </carrier_config>
     <carrier_config mcc="226" mnc="03,06">
         <boolean name="config_show_prefer_4g" value="true"/>
@@ -5022,6 +5306,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_show_plmn_limited_service" value="true"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
+        <int name="config_nr_display_rule" value="4"/>
+        <int name="config_nr_display_timer1" value="10"/>
+        <int name="config_nr_display_timer2" value="10"/>
     </carrier_config>
     <carrier_config mcc="297" mnc="1">
         <boolean name="display_call_type_icon_bool" value="true"/>
@@ -5051,9 +5338,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_hide_pref_sms_settings" value="false"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
+        <int name="config_nr_display_rule" value="4"/>
+        <int name="config_nr_display_timer1" value="10"/>
+        <int name="config_nr_display_timer2" value="10"/>
     </carrier_config>
     <carrier_config mcc="401" mnc="1">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+    </carrier_config>
+    <carrier_config mcc="401" mnc="77">
+        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="294" mnc="1">
         <boolean name="config_show_prefer_4g" value="true"/>
@@ -5079,8 +5373,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_show_plmn_limited_service" value="true"/>
         <boolean name="config_smsc_no_need_show_international_number" value="true"/>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
+        <int name="config_nr_display_rule" value="4"/>
+        <int name="config_nr_display_timer1" value="10"/>
+        <int name="config_nr_display_timer2" value="10"/>
     </carrier_config>
     <carrier_config mcc="204" mnc="16,20">
+        <boolean name="config_hide_mms_apn" value="true"/>
         <boolean name="config_show_prefer_4g" value="true"/>
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
@@ -5100,6 +5398,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     </carrier_config>
     <carrier_config mcc="204" mnc="16">
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true"/>
+        <int name="config_nr_display_rule" value="4"/>
+        <int name="config_nr_display_timer1" value="10"/>
+        <int name="config_nr_display_timer2" value="10"/>
     </carrier_config>
     <carrier_config gid1="4E4C" mcc="204" mnc="2">
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
@@ -5133,6 +5434,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_cota_carrier_customize_for_mute_ringer_feature" value="true"/>
         <boolean name="config_cota_carrier_customize_for_stk_feature" value="true"/>
         <boolean name="config_restore_participants_presentation" value="true"/>
+        <boolean name="config_smsc_no_need_show_international_number" value="true"/>
     </carrier_config>
     <carrier_config mcc="242" mnc="1">
         <string-array name="carrier_metered_apn_types_strings" num="3">
@@ -5155,14 +5457,17 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="config_editable_wfc_when_calling" value="false"/>
     </carrier_config>
+    <carrier_config mcc="250" mnc="20">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+    </carrier_config>
     <carrier_config mcc="283" mnc="5">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
     </carrier_config>
-    <carrier_config mcc="284" mnc="1">
-        <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true"/>
-    </carrier_config>
     <carrier_config mcc="240" mnc="7">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="238" mnc="2">
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="238" mnc="20,30">
@@ -5175,6 +5480,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         </string-array>
     </carrier_config>
     <carrier_config mcc="240" mnc="8">
+        <boolean name="config_restore_participants_presentation" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <string-array name="carrier_metered_apn_types_strings" num="3">
             <item value="default"/>
@@ -5239,8 +5545,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     </carrier_config>
     <carrier_config mcc="206" mnc="1">
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
-        <boolean name="hide_wfc_mode_option" value="true"/>
-        <boolean name="editable_wfc_mode_bool" value="false"/>
+    </carrier_config>
+    <carrier_config mcc="206" mnc="20">
+        <boolean name="config_restore_participants_presentation" value="true"/>
     </carrier_config>
     <carrier_config mcc="206" mnc="10">
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
@@ -5262,6 +5569,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_cota_carrier_customize_for_mute_ringer_feature" value="true"/>
         <boolean name="config_cota_carrier_customize_for_stk_feature" value="true"/>
     </carrier_config>
+    <carrier_config mcc="206" mnc="20">
+        <boolean name="config_restore_participants_presentation" value="true"/>
+    </carrier_config>
     <carrier_config mcc="293" mnc="41">
         <boolean name="config_power_center_5g_save_mode" value="false"/>
         <boolean name="carrier_5g_switch_available_bool" value="true"/>
@@ -5271,6 +5581,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="config_restore_participants_presentation" value="true"/>
         <string-array name="ims_reasoninfo_mapping_string_array" num="2">
             <item value="1014|decline|510"/>
             <item value="1014|call rejected by user|510"/>
@@ -5279,6 +5590,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="293" mnc="70">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="420" mnc="1">
+        <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="config_carrier_customize_for_stk_app_name" value="true"/>
     </carrier_config>
     <carrier_config mcc="420" mnc="01,03,04">
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
@@ -5298,6 +5614,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="allow_hold_video_call_bool" value="false"/>
         <string-array name="carrier_metered_apn_types_strings" num="3">
             <item value="default"/>
             <item value="dun"/>
@@ -5321,14 +5638,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="452" mnc="4">
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
-    </carrier_config>
-    <carrier_config mcc="240" mnc="8">
-        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+        <boolean name="config_show_prefer_3g" value="false"/>
     </carrier_config>
     <carrier_config mcc="270" mnc="99">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
         <boolean name="editable_wfc_roaming_mode_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="293" mnc="70">
@@ -5421,26 +5734,28 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
         <boolean name="display_hd_audio_property_bool" value="false"/>
-    </carrier_config>
-    <carrier_config mcc="647" mnc="0">
-        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="655" mnc="1">
+        <boolean name="config_prefer_2g_bool" value="false"/>
         <string name="default_vm_number_string">132
         </string>
         <boolean name="hide_wfc_mode_option" value="true"/>
         <boolean name="editable_wfc_mode_bool" value="false"/>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="655" mnc="2">
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="655" mnc="10">
+        <boolean name="config_prefer_2g_bool" value="false"/>
         <boolean name="hide_ims_apn_bool" value="false"/>
         <boolean name="hide_xcap_apn_bool" value="false"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="editable_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_callbarring_over_ims_no_need_password" value="true"/>
+        <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true"/>
     </carrier_config>
     <carrier_config mcc="440" mnc="11">
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
@@ -5555,6 +5870,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="208" mnc="15">
         <boolean name="carrier_volte_available_bool" value="true"/>
     </carrier_config>
+    <carrier_config mcc="214" mnc="4">
+        <boolean name="carrier_volte_available_bool" value="true"/>
+    </carrier_config>
     <carrier_config mcc="222" mnc="7">
         <boolean name="carrier_volte_available_bool" value="true"/>
     </carrier_config>
@@ -5569,12 +5887,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_volte_available_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="242" mnc="14">
-        <boolean name="carrier_volte_available_bool" value="false"/>
+        <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="carrier_wfc_ims_available_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="244" mnc="12,13">
         <boolean name="carrier_volte_available_bool" value="false"/>
         <boolean name="carrier_wfc_ims_available_bool" value="false"/>
+    </carrier_config>
+    <carrier_config mcc="250" mnc="20">
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="250" mnc="99">
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
@@ -5598,6 +5920,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="260" mnc="3">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_vt_available_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="260" mnc="6">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -5624,6 +5947,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="carrier_vt_available_bool" value="true"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="294" mnc="3">
+        <boolean name="carrier_volte_available_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="310" mnc="30,70,90,150,170,280,380,410,560,650,680,980">
         <boolean name="carrier_volte_available_bool" value="false"/>
@@ -5667,21 +5993,35 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="334" mnc="130,140">
         <boolean name="carrier_volte_available_bool" value="true"/>
     </carrier_config>
+    <carrier_config mcc="404" mnc="02,03,10,16,31,40,45,49,70,90,92,93,94,95,96,97,98">
+        <boolean name="carrier_disable_5g_switch_bool" value="false"/>
+    </carrier_config>
+    <carrier_config mcc="405" mnc="51,52,53,54,55,56">
+        <boolean name="carrier_disable_5g_switch_bool" value="false"/>
+    </carrier_config>
     <carrier_config mcc="413" mnc="5">
         <boolean name="carrier_volte_available_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="414" mnc="9">
         <boolean name="carrier_volte_available_bool" value="true"/>
     </carrier_config>
+    <carrier_config mcc="420" mnc="9">
+        <boolean name="carrier_volte_available_bool" value="true"/>
+    </carrier_config>
     <carrier_config mcc="427" mnc="1">
         <boolean name="carrier_volte_available_bool" value="true"/>
     </carrier_config>
+    <carrier_config mcc="427" mnc="7">
+        <boolean name="carrier_volte_available_bool" value="true"/>
+    </carrier_config>
     <carrier_config mcc="502" mnc="12">
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
         <boolean name="carrier_vt_available_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="502" mnc="19">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="carrier_vt_available_bool" value="true"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="505" mnc="3">
         <boolean name="carrier_wfc_ims_available_bool" value="false"/>
@@ -5716,6 +6056,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     </carrier_config>
     <carrier_config mcc="520" mnc="3">
         <boolean name="carrier_vt_available_bool" value="true"/>
+        <boolean name="carrier_disable_sa_mode_bool" value="false"/>
+        <boolean name="carrier_sa_mode_available_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="520" mnc="05,18,47">
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
@@ -5735,8 +6077,23 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_sa_mode_available_bool" value="true"/>
         <boolean name="carrier_disable_sa_mode_bool" value="false"/>
     </carrier_config>
+    <carrier_config mcc="716" mnc="10">
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_vt_available_bool" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="730" mnc="3">
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_vt_available_bool" value="true"/>
+    </carrier_config>
     <carrier_config mcc="730" mnc="10">
         <boolean name="carrier_volte_available_bool" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="732" mnc="101">
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_vt_available_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="732" mnc="123">
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
@@ -6712,6 +7069,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <!--印度 IN Idea -->
     <carrier_config mcc="405" mnc="799,70,845,846,848,849,850,852,853">
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
-    </carrier_config>    
+    </carrier_config>
 
 </carrier_config_list>

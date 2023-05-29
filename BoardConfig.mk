@@ -57,6 +57,9 @@ AB_OTA_PARTITIONS := \
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
+# Props
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := munch
 TARGET_NO_BOOTLOADER := true
